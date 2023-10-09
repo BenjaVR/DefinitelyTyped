@@ -24,5 +24,12 @@ declare namespace imageFunction {
         width?: number | undefined;
         height?: number | undefined;
         responseType?: string | undefined;
+        jpegOptions?: {
+            force: boolean;
+            quality: number;
+        };
+        fit?: "cover" | "contain" | "fill" | "inside" | "outside";
+        failOnError?: boolean;
+        withMetaData?: boolean;
     }
 }
